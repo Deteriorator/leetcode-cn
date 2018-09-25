@@ -3,3 +3,4 @@
 
 ## leetcode-cn
 
+* [两数之和](leetcode-cn/简单/twoSum.py)
