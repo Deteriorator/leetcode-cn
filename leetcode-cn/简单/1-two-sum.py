@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     twoSum
+   File Name：     1-two-sum
    Description :
    Author :        Liangz
    Date：          2018/9/25
