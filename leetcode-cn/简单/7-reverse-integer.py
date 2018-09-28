@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-   File Name：     reverse
+   File Name：     7-reverse-integer
    Description :
    Author :        Liangz
    Date：          2018/9/25
