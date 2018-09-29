@@ -42,16 +42,7 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
-        list1 = []
-        str1 = str(x)
-        for i in str1:
-            list1.append(i)
-        length = len(list1)
-        reverse_list = list1.reverse()
-        for i in range(0, length):
-            while list1[i] == reverse_list[i]:
-                continue
-            return True
+        
 
 if __name__ == '__main__':
     # x = int(input())
