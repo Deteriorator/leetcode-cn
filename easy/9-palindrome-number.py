@@ -7,7 +7,7 @@
    Date：          2018/9/28
 -------------------------------------------------
    Change Activity:
-                   2018/9/28:
+                   2019/8/4:
 -------------------------------------------------
 """
 __author__ = 'Liangz'
@@ -35,28 +35,45 @@ __author__ = 'Liangz'
 
 """
 
+"""
+1. 使用字符串很简单
+执行结果：通过
+显示详情
+执行用时 :84 ms, 在所有 Python3 提交中击败了91.45%的用户
+内存消耗 :13.9 MB, 在所有 Python3 提交中击败了5.01%的用户
+"""
+# class Solution(object):
+#     def isPalindrome(self, x: int) -> bool:
+#         """
+#         :type x: int
+#         :rtype: bool
+#         """
+#         return str(x) == str(x)[::-1]
 
-class Solution(object):
-    def isPalindrome(self, x):
-        """
-        :type x: int
-        :rtype: bool
-        """
-        list1 = []
-        str1 = str(x)
-        for i in str1:
-            list1.append(i)
-        length = len(list1)
-        reverse_list = list1.reverse()[:]
-        for i in range(0, length):
-            while list1[i] == reverse_list[length-1]:
-                continue
+"""
+执行结果：通过
+显示详情
+执行用时 :112 ms, 在所有 Python3 提交中击败了45.90%的用户
+内存消耗 :14 MB, 在所有 Python3 提交中击败了5.01%的用户
+"""
+
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x < 0:
+            return False
+        elif x == 0:
             return True
+        y = 0
+        quotient = x
+        while quotient != 0:
+            remainder = quotient % 10
+            y = y * 10 + remainder
+            quotient = int(quotient / 10)
+        return x == y
+
 
 if __name__ == '__main__':
     # x = int(input())
-    print(Solution().isPalindrome(1221))
-
-
-
-
+    x = Solution()
+    print(x.isPalindrome(1221))

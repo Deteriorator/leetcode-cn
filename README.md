@@ -1,4 +1,4 @@
-# Programming-Exercise
+# leetcode-cn
 编程练习题
 
 ## leetcode-cn
@@ -10,4 +10,5 @@
 5.
 6.
 7. [反转整数](easy/7-reverse-integer.py)
-
+8.
+9. [回文数](easy/9-palindrome-number.py)
