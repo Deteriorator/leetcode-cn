@@ -5,7 +5,7 @@
 
 1. [两数之和](easy/1-two-sum.py)
 2. [两数相加](medium/2-add-two-numbers.py)
-3. 
+3. [无重复字符的最长子串](medium/3-longest-substring-without-repeating-characters.py)
 4.
 5.
 6.
