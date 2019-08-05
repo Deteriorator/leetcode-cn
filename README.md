@@ -4,7 +4,7 @@
 ## leetcode-cn
 
 1. [两数之和](easy/1-two-sum.py)
-2.
+2. [两数相加](medium/2-add-two-numbers.py)
 3. 
 4.
 5.
