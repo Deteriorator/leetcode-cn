@@ -10,6 +10,7 @@
                    2018/9/25:
 -------------------------------------------------
 """
+from typing import List
 
 """
 给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
@@ -27,14 +28,9 @@
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        result = []
-        for i in range(0,len(nums)):
-            for i in range(0, len(nums)):
-                for j in range(i+1, len(nums)):
-                    if nums[i] + nums[j] == target:
-                        result.append(i)
-                        result.append(j)
-        return result
+        for idx, val in enumerate(nums):
+            if (target - val) in nums[idx+1:]:
+                return [idx, nums[idx+1:].index(target-val)+idx+1]
 
 
 if __name__ == '__main__':
