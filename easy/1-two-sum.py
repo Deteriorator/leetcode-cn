@@ -27,13 +27,21 @@ from typing import List
 
 
 class Solution:
+
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for idx, val in enumerate(nums):
             if (target - val) in nums[idx+1:]:
                 return [idx, nums[idx+1:].index(target-val)+idx+1]
 
+    def twoSumI(self, nums: List[int], target: int) -> List[int]:
+        temp = dict()
+        for i in range(len(nums)):
+            if target - nums[i] in temp:
+                return [i, temp[target - nums[i]]]
+            temp[nums[i]] = i
+
 
 if __name__ == '__main__':
     nums = [2, 7, 11, 15]
     result = Solution()
-    print(result.twoSum(nums, 9))
+    print(result.twoSumI(nums, 9))
